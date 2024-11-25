@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 context: context,
                 builder: (context) => AlertDialog(
                   content: Text(
-                    'counter is ${BlocProvider.of<HomeController>(context).state.counter}',
+                    'counter is ${state.counter}',
                   ),
                   actions: [
                     TextButton(
@@ -66,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           FloatingActionButton(
             heroTag: 'increase',
-            onPressed: BlocProvider.of<HomeController>(context).increment,
+            onPressed: context.read<HomeController>().increment,
             backgroundColor: Colors.indigo.shade900,
             child: const Icon(
               Icons.add,
@@ -76,7 +76,7 @@ class _HomeScreenState extends State<HomeScreen> {
           const SizedBox(width: 10),
           FloatingActionButton(
             heroTag: 'decrease',
-            onPressed: BlocProvider.of<HomeController>(context).decrement,
+            onPressed: context.read<HomeController>().decrement,
             backgroundColor: Colors.indigo.shade900,
             child: const Icon(
               Icons.remove,
