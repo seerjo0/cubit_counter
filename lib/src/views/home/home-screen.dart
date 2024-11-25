@@ -22,10 +22,10 @@ class _HomeScreenState extends State<HomeScreen> {
         centerTitle: true,
         backgroundColor: Colors.indigo.shade900,
       ),
-      body: BlocBuilder<HomeController, HomeState>(
-        builder: (context, state) {
+      body: BlocConsumer<HomeController, HomeState>(
+        listener: (context, state) {
           if (state.isLoading) {
-            return const Center(
+            const Center(
               child: CircularProgressIndicator(),
             );
           }
@@ -34,33 +34,31 @@ class _HomeScreenState extends State<HomeScreen> {
               Navigator.pushNamed(context, '/other-page');
             case == 3:
               showDialog<String>(
-                    context: context,
-                    builder: (context) => AlertDialog(
-                      content: Text(
-                        'counter is ${BlocProvider.of<HomeController>(context).state.counter}',
-                      ),
-                      actions: [
-                        TextButton(
-                          onPressed: () => Navigator.pop(context, 'OK'),
-                          child: const Text('OK'),
-                        ),
-                        TextButton(
-                            onPressed:
-                                BlocProvider.of<HomeController>(context).reset,
-                            child: const Text('Reset counter'))
-                      ],
-                    ),
-                  );
-          }
-          return Center(
-                child: Text(
-                  '${state.counter}',
-                  style: const TextStyle(
-                    fontSize: 50,
-                    fontWeight: FontWeight.bold,
+                context: context,
+                builder: (context) => AlertDialog(
+                  content: Text(
+                    'counter is ${BlocProvider.of<HomeController>(context).state.counter}',
                   ),
+                  actions: [
+                    TextButton(
+                      onPressed: () => Navigator.pop(context, 'OK'),
+                      child: const Text('OK'),
+                    ),
+                  ],
                 ),
               );
+          }
+        },
+        builder: (context, state) {
+          return Center(
+            child: Text(
+              '${state.counter}',
+              style: const TextStyle(
+                fontSize: 50,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          );
         },
       ),
       floatingActionButton: Row(

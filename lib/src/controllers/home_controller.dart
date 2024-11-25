@@ -15,6 +15,4 @@ class HomeController extends Cubit<HomeState> {
   void increment() => emit(state.copyWith(counter: state.counter + 1));
 
   void decrement() => emit(state.copyWith(counter: state.counter - 1));
-
-  void reset() => emit(HomeState(isLoading: false, counter: 0));
 }
