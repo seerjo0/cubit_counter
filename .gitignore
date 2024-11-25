@@ -517,3 +517,7 @@ build/app/tmp/packJniLibsflutterBuildDebug/MANIFEST.MF
 .dart_tool/flutter_build/f2042f062d358517c855536c6d6655e9/kernel_snapshot_program.d
 .dart_tool/flutter_build/f2042f062d358517c855536c6d6655e9/kernel_snapshot_program.stamp
 .dart_tool/flutter_build/f2042f062d358517c855536c6d6655e9/program.dill
+.dart_tool/package_config_subset
+.dart_tool/package_config.json
+.dart_tool/version
+.dart_tool/dartpad/web_plugin_registrant.dart
