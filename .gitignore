@@ -521,3 +521,14 @@ build/app/tmp/packJniLibsflutterBuildDebug/MANIFEST.MF
 .dart_tool/package_config.json
 .dart_tool/version
 .dart_tool/dartpad/web_plugin_registrant.dart
+.dart_tool/flutter_build/f2042f062d358517c855536c6d6655e9/debug_android_application.stamp
+.dart_tool/flutter_build/f2042f062d358517c855536c6d6655e9/flutter_assets.d
+.dart_tool/flutter_build/f2042f062d358517c855536c6d6655e9/gen_dart_plugin_registrant.stamp
+.dart_tool/flutter_build/f2042f062d358517c855536c6d6655e9/gen_localizations.stamp
+.dart_tool/flutter_build/f2042f062d358517c855536c6d6655e9/kernel_snapshot_native_assets.stamp
+.dart_tool/flutter_build/f2042f062d358517c855536c6d6655e9/kernel_snapshot.stamp
+.dart_tool/flutter_build/f2042f062d358517c855536c6d6655e9/native_assets.d
+.dart_tool/flutter_build/f2042f062d358517c855536c6d6655e9/native_assets.dill
+.dart_tool/flutter_build/f2042f062d358517c855536c6d6655e9/native_assets.stamp
+.dart_tool/flutter_build/f2042f062d358517c855536c6d6655e9/native_assets.yaml
+.dart_tool/flutter_build/f2042f062d358517c855536c6d6655e9/outputs.json

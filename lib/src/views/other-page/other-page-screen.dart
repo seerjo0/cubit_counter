@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
 
-class OtherPageScreen extends StatefulWidget {
+class OtherPageScreen extends StatelessWidget {
   const OtherPageScreen({super.key});
 
-  @override
-  State<OtherPageScreen> createState() => _OtherPageScreenState();
-}
-
-class _OtherPageScreenState extends State<OtherPageScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

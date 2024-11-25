@@ -3,14 +3,9 @@ import 'package:cubit_counter/src/controllers/home_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,21 +27,32 @@ class _HomeScreenState extends State<HomeScreen> {
           switch (state.counter) {
             case == -1:
               Navigator.pushNamed(context, '/other-page');
+              context.read<HomeController>().reset();
             case == 3:
               showDialog<String>(
                 context: context,
                 builder: (context) => AlertDialog(
                   content: Text(
                     'counter is ${state.counter}',
+                    style: const TextStyle(
+                      fontSize: 25,
+                    ),
                   ),
                   actions: [
                     TextButton(
                       onPressed: () => Navigator.pop(context, 'OK'),
-                      child: const Text('OK'),
+                      child: const Text(
+                        'OK',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15,
+                        ),
+                      ),
                     ),
                   ],
                 ),
               );
+              context.read<HomeController>().reset();
           }
         },
         builder: (context, state) {
