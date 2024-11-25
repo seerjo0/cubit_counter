@@ -512,3 +512,8 @@ build/app/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin
 build/app/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module
 build/app/tmp/kotlin-classes/debug/com/example/cubit_counter/MainActivity.class
 build/app/tmp/packJniLibsflutterBuildDebug/MANIFEST.MF
+.dart_tool/flutter_build/f2042f062d358517c855536c6d6655e9/.filecache
+.dart_tool/flutter_build/f2042f062d358517c855536c6d6655e9/app.dill
+.dart_tool/flutter_build/f2042f062d358517c855536c6d6655e9/kernel_snapshot_program.d
+.dart_tool/flutter_build/f2042f062d358517c855536c6d6655e9/kernel_snapshot_program.stamp
+.dart_tool/flutter_build/f2042f062d358517c855536c6d6655e9/program.dill
