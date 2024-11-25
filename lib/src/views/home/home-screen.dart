@@ -83,18 +83,6 @@ class _HomeScreenState extends State<HomeScreen> {
               color: Colors.white,
             ),
           ),
-          const SizedBox(width: 10),
-          FloatingActionButton(
-            heroTag: 'other-page',
-            onPressed: () {
-              Navigator.pushNamed(context, '/other-page');
-            },
-            backgroundColor: Colors.indigo.shade900,
-            child: const Icon(
-              Icons.arrow_forward,
-              color: Colors.white,
-            ),
-          ),
         ],
       ),
     );
